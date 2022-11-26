@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    display: block;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: repeating-radial-gradient(
+        #323619,
+        #19362d,
+        #281936,
+        #1c040a
+    );
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.header-1 {
+    background: linear-gradient(
+        45deg,
+        #323619,
+        #19362d 30%,
+        #281936 50%,
+        #1c040a
+    );
+    text-transform: uppercase;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-shadow: black 0 -.5rem;
+    border-bottom: .5rem solid black;
+}
+
+.main-heading {
+    padding-bottom: 1rem;
+    font-size: 4.5rem;
+}
+
+.header-1 li {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: 800;
+}
+
+.container {
+    z-index: 2;
+    margin: 15rem auto 15rem auto;
+    padding: 2.5rem;
+    width: 35%;
+    border: 1rem solid black;
+    background: linear-gradient(
+        180deg,
+        #242345 10%,
+        #141347 50%,
+        #110212 90%,
+        #0a0003 100%
+    );
+    text-align: center;
+    color: white;
+}
+
+.smaller {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container img {
+    width: 50rem;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border: .5rem solid black;
+}
+
+.container h1 {
+    font-size: 4rem;
+    text-shadow: black 0 -1rem;
+}
+
+.container h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-shadow: black 0 -1rem;
+}
+
+.container p,
+li {
+    font-size: 2rem;
+}
+
+.container ul {
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+    list-style-position: inside;
+    text-align: center;
+    list-style-image: linear-gradient(
+        black,
+        #1a1019
+    );
+}
+
+.container ol {
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+    list-style-position: inside;
+    text-align: center;
+    list-style-type: cjk-heavenly-stem;
+}
+
+.container li {
+    margin: 1rem 1rem;
+}
+
+.container section {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.container {
+    width: 35%;
+    height: auto;
+    animation-name: spin;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+  }
+  
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }

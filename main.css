@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    display: block;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #b4d9bb;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.header-1 {
+    background: #a1b38d;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    margin-top: -15rem;
+    border-bottom: .5rem black solid;
+}
+
+.main-heading {
+    padding-bottom: 1rem;
+    font-size: 4.5rem;
+}
+
+.header-1 li {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.container {
+    margin: 15rem auto 2.5rem auto;
+    width: 50%;
+    border: 1rem black solid;
+    padding: 5rem;
+    background: #718a6a;
+}
+
+.container img {
+    width: 50rem;
+    height: auto;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    border: .5rem solid black;
+}
+
+.container h2 {
+    font-size: 3.5rem;
+}
+
+.container p {
+    font-size: 2rem;
+}
+
+.rtl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  direction: rtl;
+  place-items: center;
+}
+
+.no-rtl {
+    direction: ltr;
+}
+
+.ltr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  direction: ltr;
+  place-items: center;
+}
+
+#homemade-lemonade-recipe p:nth-of-type(2) {
+    margin-top: 1.5rem;
+}
